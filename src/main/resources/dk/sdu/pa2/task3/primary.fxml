@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.sdu.pa2.task3.PrimaryController">
+    <HBox alignment="TOP_CENTER" layoutX="24.0" layoutY="60.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+            <ImageView id="imageView1" fx:id="imageView1" fitHeight="170.2" fitWidth="170.2" pickOnBounds="true">
+                <Image url="@placeholder.jpg"/>
+            </ImageView>
+            <Label fx:id="name1" text="Name">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0">
+                <Label fx:id="health1" alignment="TOP_CENTER" text="Health:" textAlignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="attack1" text="Attack:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="defense1" text="Defense:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </VBox>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+            <ImageView id="imageView2" fx:id="imageView2" fitHeight="170.2" fitWidth="170.2" pickOnBounds="true">
+                <Image url="@placeholder.jpg"/>
+            </ImageView>
+            <Label fx:id="name2" text="Name">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0">
+                <Label fx:id="health2" alignment="TOP_CENTER" text="Health:" textAlignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="attack2" text="Attack:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="defense2" text="Defense:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </VBox>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+            <ImageView id="imageView3" fx:id="imageView3" fitHeight="170.2" fitWidth="170.2" pickOnBounds="true">
+                <Image url="@placeholder.jpg"/>
+            </ImageView>
+            <Label fx:id="name3" text="Name">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="12.0">
+                <Label fx:id="health3" alignment="TOP_CENTER" text="Health:" textAlignment="CENTER">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="attack3" text="Attack:">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="defense3" text="Defense:">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+            </VBox>
+        </VBox>
+    </HBox>
+   <ChoiceBox layoutX="436.0" layoutY="14.0" prefWidth="150.0" fx:id="choiceBox" onAction="#updatePokemon"/>
+</AnchorPane>
